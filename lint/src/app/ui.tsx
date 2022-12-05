@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './ui.module.scss';
 
-import Button from './components/Button';
+import Button from './components/BaseButton/BaseButton';
 
 const UI = ({}) => {
   const textbox = React.useRef(undefined);
