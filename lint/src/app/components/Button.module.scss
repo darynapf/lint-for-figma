@@ -10,23 +10,23 @@
 }
 
 .primary {
-  background-color: $COLOR-FIGMA-BLUE;
-  color: $COLOR-WHITE;
+  background-color: $color-rgb-primary;
+  color: $color-rgb-white;
   border: none;
 
   &:hover {
-    background-color: darken($COLOR-FIGMA-BLUE, 15%);
+    background-color: darken($color-rgb-primary, 15%);
     cursor: pointer;
   }
 }
 
 .secondary {
-  background-color: $COLOR-WHITE;
-  color: $COLOR-FIGMA-BLUE;
-  border: 2px solid $COLOR-FIGMA-BLUE;
+  background-color: $color-rgb-white;
+  color: $color-rgb-primary;
+  border: 2px solid $color-rgb-primary;
 
   &:hover {
-    border-color: darken($COLOR-FIGMA-BLUE, 15%);
+    border-color: darken($color-rgb-primary, 15%);
     cursor: pointer;
     text-decoration: underline;
   }
