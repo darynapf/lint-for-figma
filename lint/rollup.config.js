@@ -6,7 +6,7 @@ import replace from '@rollup/plugin-replace';
 import { terser } from 'rollup-plugin-terser';
 import postcss from 'rollup-plugin-postcss';
 import html from 'rollup-plugin-bundle-html-plus';
-import typescript from 'rollup-plugin-typescript';
+import typescript from '@rollup/plugin-typescript';
 import svgr from '@svgr/rollup';
 
 const production = !process.env.ROLLUP_WATCH;
