@@ -1,0 +1,37 @@
+@import '../../styles/variables.scss';
+
+.base {
+  position: relative;
+  width: 24px;
+  height: 12px;
+  border-radius: 12px;
+  outline: 2px solid $color-rgb-black;
+  transition: background 0.25s;
+
+  &_active {
+    background: $color-rgb-black;
+  }
+}
+
+.control {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.circle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 12px;
+  width: 12px;
+  border-radius: 6px;
+  outline: 2px solid $color-rgb-black;
+
+  &_active {
+    transform: translateX(100%);
+  }
+}

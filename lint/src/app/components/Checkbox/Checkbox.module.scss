@@ -1,0 +1,19 @@
+@import './styles/variables.scss';
+
+@import '../../styles/variables.scss';
+
+.base {
+  position: relative;
+  width: 24px;
+  height: 12px;
+  border-radius: 12px;
+  outline: 2px solid $color-rgb-black;
+}
+
+.control {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
