@@ -9,10 +9,10 @@ const Switcher = () => {
   };
 
   return (
-    <label className={styles.container}>
-      <input className={styles.control} type="checkbox" checked={checked} onChange={handleChange} />
-      <span className={styles.circle} />
-      <span className={styles.background} />
+    <label className={styles.switcher}>
+      <input className={styles.switcher__control} type="checkbox" checked={checked} onChange={handleChange} />
+      <span className={styles.switcher__circle} />
+      <span className={styles.switcher__background} />
     </label>
   );
 };

@@ -8,10 +8,10 @@ interface ComponentProps {
 }
 
 const Button = ({ onClick, children, secondary = false }: ComponentProps) => {
-  const buttonType = secondary ? styles.secondary : styles.primary;
+  const buttonType = secondary ? styles.button_secondary : styles.button_primary;
 
   return (
-    <button onClick={onClick} className={`${styles.base} ${buttonType}`}>
+    <button onClick={onClick} className={`${styles.button} ${buttonType}`}>
       {children}
     </button>
   );

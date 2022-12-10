@@ -1,11 +1,15 @@
 import React from 'react';
 import styles from './Checkbox.module.scss';
+import Checkmark from '../../assets/icons/checkmark.svg';
 
 const Checkbox = () => {
-  // const [active, activeState] = useState(false);
   return (
-    <label className={styles.base}>
-      <input className={styles.control} type="checkbox" />
+    <label className={styles.checkbox}>
+      <input className={styles.checkbox__control} type="checkbox" />
+      <span className={styles.checkbox__background} />
+      <span className={styles.checkbox__checkmark}>
+        <Checkmark />
+      </span>
     </label>
   );
 };

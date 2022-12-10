@@ -1,6 +1,6 @@
 @import '../../styles/variables.scss';
 
-.base {
+.button {
   box-shadow: none;
   min-height: 32px;
   font-weight: 600;
@@ -10,33 +10,33 @@
   border-radius: 6px;
   border: 2px solid transparent;
   transition: opacity 0.25s, border 0.25s;
-}
 
-.primary {
-  background-color: $color-rgb-primary;
-  color: $color-rgb-white;
+  &_primary {
+    background-color: $color-rgb-primary;
+    color: $color-rgb-white;
 
-  &:hover {
-    opacity: 0.6;
-    cursor: pointer;
+    &:hover {
+      opacity: 0.6;
+      cursor: pointer;
+    }
+
+    &:active {
+      border: 2px solid rgba($color-rgb-primary, 0.3);
+    }
   }
 
-  &:active {
-    border: 2px solid rgba($color-rgb-primary, 0.3);
-  }
-}
+  &_secondary {
+    background-color: $color-rgb-white;
+    color: $color-rgb-black;
+    border: 1px solid $color-rgb-black;
 
-.secondary {
-  background-color: $color-rgb-white;
-  color: $color-rgb-black;
-  border: 1px solid $color-rgb-black;
+    &:hover {
+      opacity: 0.6;
+      cursor: pointer;
+    }
 
-  &:hover {
-    opacity: 0.6;
-    cursor: pointer;
-  }
-
-  &:active {
-    border: 2px solid $color-rgb-primary;
+    &:active {
+      border: 2px solid $color-rgb-primary;
+    }
   }
 }

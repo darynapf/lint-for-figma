@@ -1,19 +1,43 @@
-@import './styles/variables.scss';
-
 @import '../../styles/variables.scss';
 
-.base {
+.checkbox {
   position: relative;
-  width: 24px;
-  height: 12px;
-  border-radius: 12px;
-  outline: 2px solid $color-rgb-black;
-}
+  width: 0.75em;
+  height: 0.75em;
+  border-radius: 2px;
+  overflow: hidden;
+  cursor: pointer;
 
-.control {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  height: 0;
-  width: 0;
+  &__control {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    height: 0;
+    width: 0;
+
+    &:checked {
+      ~ .checkbox__background {
+        background: $color-rgb-primary;
+        border: none;
+      }
+
+      ~ .checkbox__checkmark {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__background {
+    position: absolute;
+    inset: 0;
+    border: 2px solid $color-rgb-black;
+  }
+
+  &__checkmark {
+    z-index: 100;
+    opacity: 0;
+    width: 0.5em;
+    height: 0.5em;
+    fill: $color-rgb-white;
+  }
 }

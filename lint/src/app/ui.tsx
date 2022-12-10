@@ -3,6 +3,8 @@ import styles from './ui.module.scss';
 
 import Footer from './components/Footer/Footer';
 import Switcher from './components/Switcher/Switcher';
+import Checkbox from './components/Checkbox/Checkbox';
+import Input from './components/Input/Input';
 
 const UI = ({}) => {
   // const textbox = React.useRef(undefined);
@@ -42,7 +44,9 @@ const UI = ({}) => {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <Switcher name="test" />
+        <Switcher />
+        <Checkbox />
+        <Input />
       </div>
       <div className={styles.footer}>
         <Footer
