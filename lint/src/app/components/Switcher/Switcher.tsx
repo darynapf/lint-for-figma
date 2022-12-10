@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Switcher.module.scss';
 
 const Switcher = () => {
-  // const [active, activeState] = useState(false);
+  const [checked, setChecked] = useState<boolean>(false);
+
+  const handleChange = () => {
+    setChecked(!checked);
+  };
+
   return (
-    <label className={styles.base}>
+    <label className={styles.container}>
+      <input className={styles.control} type="checkbox" checked={checked} onChange={handleChange} />
       <span className={styles.circle} />
-      <input className={styles.control} type="checkbox" />
+      <span className={styles.background} />
     </label>
   );
 };

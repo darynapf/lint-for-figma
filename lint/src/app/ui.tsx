@@ -42,7 +42,7 @@ const UI = ({}) => {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <Switcher />
+        <Switcher name="test" />
       </div>
       <div className={styles.footer}>
         <Footer
